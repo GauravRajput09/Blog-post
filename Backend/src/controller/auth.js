@@ -163,8 +163,7 @@ const forgotPassword = async (req, res) => {
       },
     });
 
-    // const resetUrl = `http://localhost:5173/reset-password/${token}`;
-    // Backend reset email sending logic (Node.js example)
+    // Backend reset email 
     const resetUrl = `http://localhost:5173/reset-password/${token}`;
     try {
       await transporter.sendMail({
