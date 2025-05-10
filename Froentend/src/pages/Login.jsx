@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// ✅ validation schema
+// validation schema
 const loginSchema = Yup.object().shape({
   email: Yup.string().required("Email is required").email("Invalid email"),
   password: Yup.string().required("Password is required"),
