@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// ✅ validation schema
+//validation schema
 const forgotPasswordSchema = Yup.object().shape({
   email: Yup.string()
     .required("Email is required")
